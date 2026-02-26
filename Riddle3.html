@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riddle 3</title>
+<style>
+body{font-family:Arial;background:#eef2f7;text-align:center;padding:30px;}
+.box{background:white;padding:25px;border-radius:10px;max-width:400px;margin:auto;}
+input,button{padding:10px;margin-top:10px;width:90%;}
+button{background:#28a745;color:white;border:none;border-radius:6px;}
+</style>
+<script>
+function checkAnswer(){
+let ans=document.getElementById("ans").value.toLowerCase().trim();
+if(ans==="shadow"){window.location.href="riddle4.html";}
+else{alert("Wrong answer! Try again.");}
+}
+</script>
+</head>
+<body>
+<div class="box">
+<h2>Riddle 3</h2>
+<p>I follow you everywhere but disappear at night. What am I?</p>
+<input id="ans" type="text">
+<button onclick="checkAnswer()">Submit</button>
+</div>
+</body>
+</html>
